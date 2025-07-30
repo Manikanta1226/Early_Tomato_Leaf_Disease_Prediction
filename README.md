@@ -1,55 +1,70 @@
-# Early_Tomato_Leaf_Disease_Prediction
+# Early-Tomato-Leaf-Disease-Prediction
+This repository provides an implementation of a deep learning-based approach for early detection and classification of tomato leaf diseases. Using models like CNN, ResNet50, VGG16, and AlexNet, the study aims to assist farmers in improving crop yields and ensuring sustainable development.
 
-A deep learning-based project for early detection and classification of tomato leaf diseases. This project utilizes CNN, ResNet50, VGG16, and AlexNet to assist farmers in boosting crop yield and promoting sustainable agriculture.
+🚀 Project Overview
+Tomato plants are prone to various diseases, often resulting in reduced yield and quality. Early disease detection can mitigate these issues significantly. This project classifies tomato leaf images as healthy or diseased using a dataset sourced from Kaggle and agricultural fields in Andhra Pradesh.
 
-🚀 Project Overview:
-Tomato crops are vulnerable to a range of diseases, impacting both quality and yield. Early diagnosis is essential for timely treatment and productivity. This project classifies tomato leaf images into healthy or diseased categories using deep learning techniques.
+Key Highlights
+Dataset of 8834 images (healthy & diseased leaves).
+Image preprocessing (resizing, batching, train-validation split).
+Implementation of CNN, ResNet50, VGG16, and AlexNet models.
+Achieved 94% accuracy using the CNN model with data augmentation.
 
-🧠 Key Features:
-📸 Dataset: 8,834 images (healthy & diseased leaves), sourced from Kaggle and real farms in Andhra Pradesh.
+The dataset can be taken from kaggle or from fields just make the folders and add the links.
 
-🛠️ Preprocessing: Image resizing, batching, and splitting into train/validation sets.
+📂 Repository Structure
+├── dataset/  
+│   ├── healthy/  
+│   ├── diseased/  
+├── models/  
+│   ├── cnn_model.ipby  
+│   ├── resnet50_model.ipby  
+│   ├── vgg16_model.ipby  
+│   ├── alexnet_model.ipby  
+├── preprocessing/  
+│   └── preprocess_images.ipby  
+├── results/  
+│   ├── results_before_augmentation.csv  
+│   ├── results_after_augmentation.csv  
+├── README.md  
+└── requirements.txt  
 
-🤖 Models Implemented:
+📊 Results
+Model	   Training Accuracy	 Validation Accuracy
+CNN	         94%	                93%
+ResNet50	   68%	                73%
+VGG16	       24%	                24%
+AlexNet	     93%	                41%
 
-Custom CNN
+🛠️ Installation
+Clone the repository:
+git clone https://github.com/<username>/Early-Tomato-Leaf-Disease-Prediction.git  
+cd Early-Tomato-Leaf-Disease-Prediction  
 
-ResNet50
+Install dependencies:
+pip install -r requirements.txt 
 
-VGG16
+Prepare the dataset:
+Place your images in the dataset/ directory, categorized into healthy/ and diseased/ subfolders.
 
-AlexNet
+Run the code.
 
-🎯 Best Accuracy: 94% training accuracy using a CNN with data augmentation.
+🔮 Future Scope
+Use advanced models like GoogLeNet, YOLO, and LSTM for better predictions.
+Expand the dataset with diverse real-time images.
+Enhance preprocessing and augmentation techniques.
 
+🤝 Contributing
+Contributions are welcome! Feel free to fork the repo, make changes, and submit a pull request.
 
-📊 Model Performance
-Model	Training Accuracy	Validation Accuracy
-CNN	94%	93%
-ResNet50	68%	73%
-VGG16	24%	24%
-AlexNet	93%	41%
-
-
-🔮 Future Enhancements
-Implement GoogLeNet, YOLO, and LSTM models.
-
-Expand dataset with more diverse real-time images.
-
-Improve preprocessing and augmentation pipelines.
-
-Build a web-based prediction tool for field deployment.
-
-🤝 Contributions
-Contributions are welcome!
-Feel free to fork the repository, improve the code, and submit a pull request.
-
-🙏 Acknowledgments
+🙌 Acknowledgments
 Dataset: Kaggle
+Agricultural fields in Andhra Pradesh for real-time images.
+Feel free to contact us with suggestions or issues! 🌱
 
-Field Data: Agricultural farms in Andhra Pradesh, India
 
-📬 Contact
-If you have feedback, feature requests, or want to collaborate, feel free to reach out.
-Together, let’s support farmers with AI-powered solutions. 🌿
+
+
+
+
 
